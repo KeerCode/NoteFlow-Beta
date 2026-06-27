@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/* AlphaTab cursor styling */
+.at-cursor-bar {
+  background: rgba(34, 211, 238, 0.1) !important;
+}
+
+.at-cursor-beat {
+  background: rgba(34, 211, 238, 0.75) !important;
+  width: 3px !important;
+}
+
+/* AlphaTab auto-highlight for active notes during playback */
+.at-highlight * {
+  fill: #22d3ee !important;
+}
+
+/* Smooth cursor movement */
+.at-cursor-bar, .at-cursor-beat {
+  transition: left 0.1s linear, top 0.05s ease-out;
+}
